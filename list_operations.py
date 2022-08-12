@@ -146,6 +146,8 @@ def replace_head(input_list):
     [42, 3, 6, 9, 12, 15, 18, 21, 24, 27]
 
     """
+
+    input_list[0] = 42
     
 
 
@@ -163,7 +165,8 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
 
 
 def replace_middle(input_list):
@@ -183,6 +186,8 @@ def replace_middle(input_list):
 
     """
 
+    input_list[2:-2] = [42, 37]
+
     pass
 
 
@@ -200,7 +205,8 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
+    del input_list[2]
+    del input_list[5]
 
 
 def delete_middle(input_list):
@@ -218,5 +224,7 @@ def delete_middle(input_list):
     ['Do', 'Re', 'Ti', 'Do']
 
     """
+
+    del input_list[2:-2]
 
     pass
